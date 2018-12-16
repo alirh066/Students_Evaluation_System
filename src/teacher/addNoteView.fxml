@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane alignment="CENTER" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BDBDBD; -fx-border-style: solid; -fx-border-color: coral; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-font-style: oblique;" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.addNoteController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="284.0" spacing="10.0">
+         <children>
+            <Label text="Student ID:" />
+            <TextField fx:id="tfStudentID" prefHeight="31.0" prefWidth="193.0" style="-fx-border-color: black; -fx-border-radius: 4px; -fx-border-style: solid; -fx-border-width: 1px;" />
+         </children>
+      </HBox>
+      <Label text="Note:" />
+      <TextArea fx:id="taNote" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 4px;" />
+      <HBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="284.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onSaveNote" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: #F5F5F5; -fx-border-radius: 20px; -fx-background-radius: 30px; -fx-border-color: black;" text="Save" />
+            <Button mnemonicParsing="false" onAction="#onCancelNote" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 20px; -fx-border-color: black; -fx-border-radius: 20px;" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</FlowPane>
